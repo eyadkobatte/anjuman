@@ -1,0 +1,6 @@
+heroku	https://git.heroku.com/warm-waters-98062.git (fetch)
+heroku	https://git.heroku.com/warm-waters-98062.git (push)
+master	https://github.com/eyadkobatte/anjuman (fetch)
+master	https://github.com/eyadkobatte/anjuman (push)
+origin	https://github.com/eyadkobatte/anjuman (fetch)
+origin	https://github.com/eyadkobatte/anjuman (push)
