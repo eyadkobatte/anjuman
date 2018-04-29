@@ -1,0 +1,8 @@
+{% include "headers.html" %}
+<div class="container">
+    {% if standard %}
+            {% for s in standard %}
+                {{s}}<br>
+            {% endfor %}
+    {% endif %}
+</div>

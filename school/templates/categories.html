@@ -1,0 +1,10 @@
+{% include "headers.html" %}
+<div class="container">
+    Categories
+
+    {% if category %}
+        {% for c in category %}
+            {{ c }}<br>
+        {% endfor %}
+    {% endif %}
+</div>
