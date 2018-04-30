@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from .models import Standard, Category
+from .models import Standard, Category, Student
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
@@ -19,3 +19,10 @@ def categories(request):
         'category': category
     }
     return render(request, 'categories.html', context)
+
+def students(request):
+    students = Student.objects.all().order_by('present_standard')
+    context = {
+        'students': students
+    }
+    return render(request, 'students.html', context)

@@ -1,0 +1,30 @@
+{% include "headers.html" %}
+<head>
+    <style>
+        th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<div class="container">
+    <table>
+        {% if students %}
+            <thead>
+                <tr>
+                    <th scope="row">ID</th>
+                    <th scope="row">Name</th>
+                    <th scope="row">Present Standard</th>
+                </tr>
+            </thead>
+            {% for value in students %}
+                    <tbody>
+                        <tr>
+                            <th scope="col">{{value.id}}</th>
+                            <td>{{value.name}}</td>
+                            <td>{{value.present_standard.class_name}}</th>
+                        </tr>
+                    </tbody>
+                {% endfor %}
+        {% endif %}
+    </table>
+</div>
